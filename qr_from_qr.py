@@ -1,11 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 from qrcode import QRCode
-try:
-    import cv2  # Para leer el QR original
-except ImportError:
-    messagebox.showerror("Error", "El módulo 'cv2' no está instalado. Por favor, instálalo usando 'pip install opencv-python'.")
-    exit()
+import cv2
 import os
 
 class QRManager:
